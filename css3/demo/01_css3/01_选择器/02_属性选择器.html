@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*[name] {
+            background: pink;
+        }*/
+        /*[name=l3] {
+            background: pink;
+        }*/
+        [name |= l3] {
+            background: pink;
+        }
+        [name ^= l] {
+            background: #269abc;
+        }
+        [name $= i] {
+            background: #2e6da4;
+        }
+        [name *= s] {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li name="l1s">11</li>
+        <li>22</li>
+        <li name="l3-li">33</li>
+        <li>44</li>
+        <li name="l5-li">55</li>
+    </ul>
+</body>
+</html>

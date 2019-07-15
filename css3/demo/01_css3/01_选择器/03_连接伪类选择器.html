@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+
+    /*链接伪类*/
+    注意:link，:visited，:target是作用于链接元素的！
+    :link		表示作为超链接，并指向一个未访问的地址的所有锚
+    :visited	表示作为超链接，并指向一个已访问的地址的所有锚
+    :target 	代表一个特殊的元素，它的id是URI的片段标识符
+
+    /*动态伪类*/
+    注意:hover，:active基本可以作用于所有的元素！
+    :hover		表示悬浮到元素上
+    :active		表示匹配被用户激活的元素（点击按住时）
+	-->
+    <style type="text/css">
+        a {
+            display: block;
+        }
+        a:link {
+            color: pink;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            color: royalblue;
+        }
+        a:active {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#1">点我点我点我</a>
+        <a href="#2">点我点我点我</a>
+        <a href="#3">点我点我点我</a>
+        <a href="#4">点我点我点我</a>
+        <a href="#5">点我点我点我</a>
+        <div id="test">我是div啦</div>
+    </div>
+</body>
+</html>
