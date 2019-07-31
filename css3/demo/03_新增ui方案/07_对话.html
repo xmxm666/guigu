@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #wrap {
+            width: 320px;
+            height: 200px;
+            /*border: 1px solid black;*/
+            position: absolute;
+        }
+        #content {
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 150px/75px;
+            text-align: center;
+            font: 20px/150px "微软雅黑";
+            font-weight: bold;
+        }
+        .one {
+            width: 35px;
+            height: 35px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            right: 16px;
+        }
+        .tow {
+            width: 15px;
+            height: 15px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">大家好，欢迎来到尚硅谷！</div>
+        <div class="one"></div>
+        <div class="tow"></div>
+    </div>
+</body>
+</html>

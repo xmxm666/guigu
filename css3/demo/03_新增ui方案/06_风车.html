@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #wrap {
+            width: 450px;
+            height: 450px;
+            margin: 100px auto;
+            transition: 5s linear;
+        }
+        #wrap div {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+            background: pink;
+            float: left;
+        }
+        #wrap div:nth-child(1),#wrap div:nth-child(4) {
+            border-radius: 0 150px;
+        }
+        #wrap div:nth-child(2),#wrap div:nth-child(3) {
+            border-radius: 150px 0px;
+        }
+        #wrap:hover {
+            transform:rotate(720deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

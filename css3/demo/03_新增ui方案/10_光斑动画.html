@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: black;
+            font: bold 80px "微软雅黑";
+            color: rgba(255,255,255,.3);
+        }
+        div {
+            margin-top: 200px;
+            text-align: center;
+            background: linear-gradient(125deg, rgba(255,255,255,0) 100px, rgba(255,255,255,1) 200px, rgba(255,255,255,0) 300px);
+            background-repeat: no-repeat;
+            background-position: -200px 0;
+            -webkit-background-clip: text;
+            /*transition: 3s;*/
+        }
+        /*div:hover {
+            background-position: 800px 0;
+        }*/
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var wrap = document.getElementById('wrap');
+            console.log(wrap);
+            var leftPos = -200;
+            move();
+            function move() {
+                setInterval(function () {
+                    if(leftPos >= 800) {
+                        leftPos = -200
+                    }else {
+                        leftPos +=20;
+                    }
+                    wrap.style.backgroundPositionX = leftPos + "px";
+                },60)
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        AtGuigu尚硅谷！
+    </div>
+</body>
+</html>

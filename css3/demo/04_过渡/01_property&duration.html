@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>transition-property</title>
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #div1 {
+        margin: 100px auto;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        transition-property: height,background-color;
+        transition-duration: 3s;
+    }
+    #div1:hover {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
+
+    #div2 {
+        margin: 100px auto;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        transition-property: height;
+        transition-duration: 2s;
+    }
+    #div2:hover {
+        width: 200px;
+        height: 200px;
+        transition-property: width;
+    }
+
+    #div3 {
+        margin: 100px auto;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        transition-property: height, width, background-color;
+        transition-duration: 3s,4s, 2s;
+    }
+    #div3:hover {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+</body>
+</html>
